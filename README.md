@@ -18,5 +18,12 @@ TO BUILD AND RUN DOCKER IMAGE:
   3) Type (without quotes): docker run -ti --rm -p 5000:5000 --name python-server myapp
      and execute the command to run the Docker container.
  
- SETUP THE DATABASE:
- 1) Database file is present in DiseasePrediction
+SETUP THE DATABASE AND HOST THE ADMIN PAGE:
+ 1) Run XAMPP Apache server and MySQL.
+ 2) Import the database file present in "DiseasePrediction" folder to phpmyadmin on XAMPP.
+ 3) Open your browser and paste this URL (without quotes) "http://localhost/DiseasePredictionWeb/".
+
+RUN THE ANDROID APP:
+  1) Install Android Studio.
+  2) Paste the "DiseasePrediction" folder in your AndroidStudioProjects folder.
+  3) Open Android Studio and run the app.
