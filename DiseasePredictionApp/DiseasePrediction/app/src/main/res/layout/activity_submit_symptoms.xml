@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".helpers.SubmitSymptomsActivity">
+
+    <TextView
+        android:id="@+id/predictOutput"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:background="#FFFFFF"
+        android:contentDescription="Predicted Disease"
+        android:fontFamily="@font/bubblegum_sans"
+        android:hint="Disease ?"
+        android:paddingTop="35sp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#1A4CCC"
+        android:textColorHint="#DDDADA"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toTopOf="@+id/showtreat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/showtreat"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="monospace"
+        android:onClick="onTreatment"
+        android:text="Treatment"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="@+id/predictOutput"
+        app:layout_constraintStart_toStartOf="@+id/predictOutput"
+        app:layout_constraintTop_toTopOf="@+id/predictOutput"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="414dp"
+        android:layout_height="552dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/gradient_background"
+        android:contentDescription="scroll"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/predictOutput"
+        app:layout_constraintVertical_bias="0.35">
+
+        <LinearLayout
+            android:id="@+id/symptomListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingTop="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="40dp">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/addSymptom"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#1A4CCC"
+            android:contentDescription="Add Symptom"
+            android:onClick="onButtonClick"
+            app:icon="@android:drawable/ic_menu_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/submit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/deleteSymptom"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#D50000"
+            android:contentDescription="Delete Symptom"
+            android:textAlignment="center"
+            app:icon="@android:drawable/ic_menu_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/submit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#04B34C"
+            android:contentDescription="Submit Symptoms"
+            android:fontFamily="monospace"
+            android:text="Submit Symptoms"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/deleteSymptom"
+            app:layout_constraintStart_toEndOf="@+id/addSymptom"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

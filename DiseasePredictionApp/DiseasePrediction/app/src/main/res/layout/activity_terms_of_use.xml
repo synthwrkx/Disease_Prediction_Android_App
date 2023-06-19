@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".helpers.TermsOfUse">
+
+    <RelativeLayout
+        android:id="@+id/termsofuse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/termhead"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_above="@+id/terms"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="54dp"
+            android:layout_marginBottom="-17dp"
+            android:background="#193A95"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="20sp"
+            android:paddingTop="10sp"
+            android:text="Terms of Use"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#FDF8F8"
+            android:translationY="70sp" />
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="87dp"
+            android:layout_marginBottom="346dp"
+            android:background="#193A95"
+            android:fontFamily="sans-serif-condensed-light"
+            android:paddingLeft="20sp"
+            android:paddingRight="10sp"
+            android:text="SymptoSense does not provide a medical diagnosis, and should not replace the judgment of a licensed healthcare practitioner. It provides information to help guide your decision making based on readily available information about symptoms. If you have any questions or concerns about the output of SymptoSense, consult your licensed healthcare practitioner."
+            android:textColor="#FDF8F8"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/startpredicting"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="384dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="269dp"
+            android:background="#193A95"
+            android:fontFamily="sans-serif-condensed-light"
+            android:paddingLeft="20sp"
+            android:paddingTop="30sp"
+            android:text="How To Use"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#FDF8F8" />
+
+        <TextView
+            android:id="@+id/howtouse"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="463dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="131dp"
+            android:background="#193A95"
+            android:fontFamily="sans-serif-condensed-light"
+            android:paddingLeft="20sp"
+            android:paddingTop="20sp"
+            android:paddingRight="10sp"
+            android:text="1. Tap on &quot;Predict Diesease&quot;.\n2. Add your symptoms.\n3. Tap on &quot;Submit Symptoms&quot;."
+            android:textColor="#FDF8F8"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="599dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#193A95"
+            android:fontFamily="@font/bubblegum_sans"
+            android:paddingTop="20sp"
+            android:text="Start predicting...."
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#FDF8F8" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
