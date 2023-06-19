@@ -8,7 +8,8 @@ FOLDER LOCATIONS:
   1) The files getdata.php, getnews.php and gettreatment.php goes into the htdocs folder of xampp.
   2) The folder "DiseasePredictionWeb" also goes into the "htdocs" folder of xampp.
   3) The folder "Disease Prediction Codes" can be kept anywhere on your system.
-  4) The folder "DiseasePrediction" should be in your "AndroidStudioProjects" folder.
+  4) The folder "DiseasePrediction" should be in your "AndroidStudioProjects" folder in the "master" branch.
+     NOTE: You are now in the "main" branch.
 
 The machine learning algorithms are executed on a Docker container.
 
