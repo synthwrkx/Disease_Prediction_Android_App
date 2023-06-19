@@ -6,9 +6,9 @@ Install XAMPP.
 
 FOLDER LOCATIONS:
   1) The files getdata.php, getnews.php and gettreatment.php goes into the htdocs folder of xampp.
-  2) The folder "DiseasePredictionWeb" also goes into the "htdocs" folder of xampp.
+  2) The folder "DiseasePrediction" also goes into the "htdocs" folder of xampp.
   3) The folder "Disease Prediction Codes" can be kept anywhere on your system.
-  4) The folder "DiseasePrediction" should be in your "AndroidStudioProjects" folder in the "master" branch.
+  4) The folder in the "master" branch "DiseasePrediction" should be in your "AndroidStudioProjects" folder.
      NOTE: You are now in the "main" branch.
 
 The machine learning algorithms are executed on a Docker container.
@@ -23,7 +23,7 @@ TO BUILD AND RUN DOCKER IMAGE:
 SETUP THE DATABASE AND HOST THE ADMIN PAGE:
  1) Run XAMPP Apache server and MySQL.
  2) Import the database file present in "DiseasePrediction" folder to phpmyadmin on XAMPP.
- 3) Open your browser and paste this URL (without quotes) "http://localhost/DiseasePredictionWeb/".
+ 3) Open your browser and paste this URL (without quotes) "http://localhost/DiseasePrediction/".
 
 RUN THE ANDROID APP:
   1) Install Android Studio.
