@@ -60,7 +60,10 @@ def predictDisease(symptoms):
     svm_prediction = data_dict["predictions_classes"][pkl_model_svm.predict(input_data)[0]]
     
     # making final prediction by taking mode of all predictions
-    final_prediction = mode([rf_prediction, nb_prediction, svm_prediction])[0][0]
+    if(rf_prediction!=nb_prediction and nb_prediction!=svm_prediction and rf_prediction!=svm_prediction):
+        final_prediction = rf_prediction
+    else:
+        final_prediction = mode([rf_prediction, nb_prediction, svm_prediction])[0][0]
     predictions = {
         #"rf_model_prediction": rf_prediction,
         #"naive_bayes_prediction": nb_prediction,
